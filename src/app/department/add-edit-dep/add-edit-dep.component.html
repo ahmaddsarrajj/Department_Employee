@@ -1,0 +1,15 @@
+<div class="mb-3 row m-2">
+
+    <label for="inputPassword" class="col-sm-2 col-form-label">Department name</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="inputPassword" [(ngModel)]="NAME" placeholder="Enter the department name">
+    </div>
+
+    <button (click)="addDepartment()" *ngIf="dep.DEPARTMENT_ID == 0" class="btn btn-primary m-2">
+        Add
+    </button>
+
+    <button (click)="updateDepartment()" *ngIf="dep.DEPARTMENT_ID != 0" class="btn btn-primary m-2">
+        Update
+    </button>
+</div>
